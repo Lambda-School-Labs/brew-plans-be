@@ -15,7 +15,6 @@ const seededRecipeRouter = require('../database/models_routers/seeded_recipes/se
 const instructionsRouter = require('../database/models_routers/instructions/instructions_router.js')
 const logsRouter = require("../database/models_routers/logs/logs_router");
 
-
 const server = express();
 
 server.use(require("morgan")("combined"));
@@ -39,6 +38,12 @@ server.use("/seededrecipes", seededRecipeRouter);
 server.use("/instructions", instructionsRouter);
 
 server.use("/logs", logsRouter);
+
+/* NOLAN'S DYNAMIC TESTING ROUTES */
+const recipesSeeded = require('../database/testing/seeded/seeded_router.js');
+// const recipesUsers = require('');
+
+server.use('/seeded', recipesSeeded);
 
 server.use(
   require("express-session")({
