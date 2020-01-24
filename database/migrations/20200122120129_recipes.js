@@ -20,7 +20,9 @@ exports.up = function(knex) {
         .string('instructions', 1000)
         .notNullable();
       seededRecipes
-        .string('yield_time', 60);
+        .integer('yield');
+      seededRecipes
+        .integer('duration');
     })
     .createTable('recipes_users', userRecipes => {
       userRecipes.increments();
@@ -40,7 +42,9 @@ exports.up = function(knex) {
         .string('tools_ingredients', 1000)
         .notNullable();
       userRecipes
-        .string('yield_time', 60);
+        .integer('yield');
+      userRecipes
+        .integer('duration');
     })
     .createTable('user_instructions', instructions => {
       instructions.increments();
