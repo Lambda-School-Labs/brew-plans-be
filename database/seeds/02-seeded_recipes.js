@@ -27,7 +27,7 @@ exports.seed = function(knex, Promise) {
     {
       title: "Brew Plans French Press",
       instructions:
-        "To start, gently pour twice the amount of water than you have coffee onto your grounds. You should use 1:12 coffee to water ratio, the exact amount is based on the size of your french press.////Give the grounds a gentle stir with a bamboo paddle or chopstick. Allow the coffee to bloom for 30 seconds.////30 Wait 30 seconds, then pour the remaining water and place the lid gently on top of the grounds. ////240 Wait 4 minutes, then push the plunger down and serve immediately or tranfer to a different vessel to ensure the coffee does not become over-extracted.",
+        "To start, gently pour twice the amount of water than you have coffee, onto your grounds. You should use 1:12 coffee to water ratio, the exact amount is based on the size of your french press.////Give the grounds a gentle stir with a bamboo paddle or chopstick. Allow the coffee to bloom for 30 seconds.////30 Wait 30 seconds, then pour the remaining water and place the lid gently on top of the grounds. ////240 Wait 4 minutes, then push the plunger down and serve immediately or tranfer to a different vessel to ensure the coffee does not become over-extracted.",
       brew_type: "French Press",
       water_temp: 195,
       coarseness: "coarse"

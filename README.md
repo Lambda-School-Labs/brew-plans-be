@@ -6,8 +6,9 @@
 
 # API Documentation
 
-#### 1️⃣ Backend delpoyed at [🚫name service here](🚫add URL here) <br>
+#### 1️⃣ Backend currently delpoyed at [www.heroku.com](https://brewplans-be.herokuapp.com) <br>
 
+[*Note*] In the frontend repo you may see the following heroku backend address commented out: [https://brewplans-production.herokuapp.com and https://backend-development-coffee.herokuapp.com] these are the backend addresses from the prior labs group, Labs 17, and are no longer in function.
 ## 1️⃣ Getting started
 
 To get the server running locally:
@@ -197,7 +198,7 @@ NOTE: There are some endpoints(marked by italics) that are not necessary because
 
     * ENV = PORT: 6000
     * PROCFILE: Development(web npm start)
-    * PROCFILE: Production(web npm install pg --save && knex migrate:rollback && knex migrate:latest && knex seed:run && node index.js)
+    * PROCFILE: Production(web npm install node index.js)
 
 ## Contributing
 
